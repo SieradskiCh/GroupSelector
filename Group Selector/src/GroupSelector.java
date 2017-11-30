@@ -44,12 +44,12 @@ public class GroupSelector
 
 	private static void sortGroupsAlphabetically()
 		{
-			for(int i = 0; i < groups; i++)
+			for(int i = 0; i < roster; i++)
 				{
-					groups.get(i).getLastName()
+					roster.get(i).getLastName();
 					
 					
-					Collections.sort(groups.get(i)
+					Collections.sort(roster.get(i)
           }
 
 	private static void printGroups()
