@@ -1,36 +1,40 @@
 
 public class Group implements java.lang.Comparable<Group>
 	{
-		private String firstNameG;
-		private String lastNameG;
-		public Group(String fn, String ln)
-			{
-			firstName = fn;
-			lastName = ln;
-			}
-		public String getFirstNameG()
-			{
-			return firstNameG;
-			}
 
-		public void setFirstName(String firstName)
-			{
-			this.firstNameG = firstName;
-			}
+	private String firstNameGroup;
+	private String lastNameGroup;
+	
+	public Group (String fno, String lno)
+		{
+		firstNameGroup = fno;
+		lastNameGroup = lno;
+		}
+	
+	public String getFirstNameGroup()
+		{
+		return firstNameGroup;
+		}
 
-		public String getLastNameG()
-			{
-			return lastNameG;
-			}
+	public void setFirstNameGroup(String firstNameGroup)
+		{
+		this.firstNameGroup = firstNameGroup;
+		}
 
-		public void setLastName(String lastName)
-			{
-			this.lastNameG = lastName;
-			}
-		@Override
-		public int compareTo(Group arg0)
-			{
-				// TODO Auto-generated method stub
-				return 0;
-			}
+	public String getLastNameGroup()
+		{
+		return lastNameGroup;
+		}
+
+	public void setLastNameGroup(String lastNameGroup)
+		{
+		this.lastNameGroup = lastNameGroup;
+		}
+
+	@Override
+	public int compareTo(Group o)
+		{
+		// TODO Auto-generated method stub
+		return 0;
+		}
 	}

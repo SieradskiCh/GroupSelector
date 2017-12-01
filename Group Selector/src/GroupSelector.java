@@ -3,13 +3,17 @@ import java.io.*;
 import java.security.acl.Group;
 public class GroupSelector
 	{
+
 	
 	public static int groupNumber = 0;
+	static int k;
+	static int groupNumber;
 	static ArrayList<BuildRoster> roster = new ArrayList<BuildRoster>();
 	public static void main(String[] args) throws IOException
 		{
 		makeRoster();
 		makeGroups();
+
 		}
 	private static void makeRoster()throws IOException
 		{
