@@ -1,6 +1,7 @@
 
 public class Group implements java.lang.Comparable<Group>
 	{
+
 	private String firstNameGroup;
 	private String lastNameGroup;
 	
@@ -36,5 +37,4 @@ public class Group implements java.lang.Comparable<Group>
 		// TODO Auto-generated method stub
 		return 0;
 		}
-
 	}
