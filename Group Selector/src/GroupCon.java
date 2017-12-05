@@ -1,10 +1,10 @@
 
-public class Group implements java.lang.Comparable<Group>
+public class GroupCon implements java.lang.Comparable<GroupCon>
 	{
 	private String firstNameGroup;
 	private String lastNameGroup;
 	
-	public Group (String fno, String lno)
+	public GroupCon (String fno, String lno)
 		{
 		firstNameGroup = fno;
 		lastNameGroup = lno;
@@ -31,7 +31,7 @@ public class Group implements java.lang.Comparable<Group>
 		}
 
 	@Override
-	public int compareTo(Group o)
+	public int compareTo(GroupCon o)
 		{
 		// TODO Auto-generated method stub
 		return 0;

@@ -31,18 +31,22 @@ public class GroupSelector
 		{
 			Scanner userInput = new Scanner(System.in);
 			System.out.println("Hello how many groups would you like?");
+			System.out.println("");
 			groupNumber = userInput.nextInt();
+			int counter = 1;
 			for (int k = 0; k < groupNumber; k++)
 				{
-				ArrayList <Group> group = new ArrayList<Group>();
+				ArrayList <GroupCon> group = new ArrayList<GroupCon>();
 				for (int j = k; j < roster.size() - (roster.size() % groupNumber); j = j + groupNumber)
 					{
 					
 					String first = roster.get(j).getFirstName();
 					String last = roster.get(j).getLastName();
-					group.add(new Group (first, last));
+					group.add(new GroupCon (first, last));
 					}
 				Collections.sort(roster, new NameSorter());
+				System.out.println("Group " + counter + ":");
+				counter++;
 				for (int o = 0; o < group.size(); o++)
 					{
 					System.out.println(group.get(o).getFirstNameGroup() + " " + group.get(o).getLastNameGroup());
